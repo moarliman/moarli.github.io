@@ -1,0 +1,112 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	font-size: 26px;
+	line-height: 34px;
+	letter-spacing: -10%;
+	font-family: 'Varela Round', sans-serif;
+	color: #6963D9;
+}
+
+body {
+	transition: background-color 0.5s ease;
+}
+
+/* begin text styles */
+
+/* unvisited link */
+
+a:link {
+	color: #6963D9;
+}
+
+/* visited link */
+
+a:visited {
+	color: #6963D9;
+}
+
+/* mouse over link */
+
+a:hover {
+	color: #71CDD4;
+}
+
+/* selected link */
+
+a:active {
+	color: #6963D9;
+}
+
+p, ul {
+	margin-bottom: 60px;
+}
+
+ul {
+	list-style: none;
+	line-height: 1.5rem;
+}
+
+/* end text styles */
+
+.wrapper {
+	/* max-width: 900px; */
+	margin: auto;
+	padding: 8%;
+}
+
+.vidPlayer {
+	position: relative;
+}
+
+.vidBtn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	-ms-transform: translate(-55%, -65%);
+	-webkit-transform: translate(-55%, -65%);
+	transform: translate(-55%, -65%);
+}
+
+#andi {
+	width: 50px;
+}
+
+#burger {
+	position: fixed;
+	top: 2%;
+	right: 4%;
+	width: 250px;
+}
+
+#burger #overlay {
+	position: absolute;
+	opacity: 0;
+}
+
+#burger:hover #overlay{
+	opacity: 1;
+}
+
+@media (min-width: 768px) {
+
+	#andi {
+		width: 100px;
+	}
+
+	html {
+		font-size: 58px;
+		line-height: 74px;
+	}
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
